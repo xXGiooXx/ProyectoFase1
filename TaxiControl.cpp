@@ -86,11 +86,13 @@ int main(){
 				getline(cin,driverLastname);
 				driverLastname = convert(driverLastname);
 				driversLastname.push_back(driverLastname);
+				
 				do{
 					cout<<"Driver ID:";
 					cin>>driverId;
 				}while(checkForItemInt(driversId, driverId));
 				driversId.push_back(driverId);
+				
 				do{
 					cout<<"Insurance Number of Driver:";
 					cin.ignore();
@@ -123,12 +125,14 @@ int main(){
 					motorNumber = convert(motorNumber);
 				}while(checkForItemInt(motorNumbers, motorNumber));
 				motorNumbers.push_back(motorNumber);
+				
 				do{
 					cout<<"Plate Number:";
 					getline(cin,plateNumber);
 					plateNumber = convert(plateNumber);
 				}while(checkForItemInt(plates, plateNumber));
 				plates.push_back(plateNumber);
+				
 			break;
 			case 2:		
 				printTable(taxis, driversName, driversLastname, driversId, insuranceNumbers, phoneNumbers, modelNames, years, motorNumbers, plates, categories);
