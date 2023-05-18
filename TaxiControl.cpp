@@ -31,7 +31,7 @@ int main(){
 	string plateNumber;
 	string modelName; 
 	string motorNumber; 
-	int year; //agregado	
+	int year;	
 	cout<<"Taxi queue system\t\n";
 	vector<int> taxis;
 	vector<int> years; 
@@ -176,7 +176,7 @@ int main(){
 				// Obtener el ID del taxi que se desea devolver a la lista de espera
 			    cout << "Enter the ID of the taxi to return to standby: ";
 			    cin >> idToReinsert;
-			    // Llamar a la función returnToStandby para devolver el taxi a la lista de espera
+			    // Llamar a la funciÃ³n returnToStandby para devolver el taxi a la lista de espera
 			    returnToStandby(taxis, nAtaxis, nAyears, nAdriversId, nAphoneNumbers, nAdriversName, 
 				nAdriversLastname, nAinsuranceNumbers, nAplates, nAmodelNames, nAmotorNumbers, 
 				nAcategories, driversName, driversLastname, driversId, insuranceNumbers, 
